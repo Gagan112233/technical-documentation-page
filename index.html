@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Technical Documentation Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav id="navbar">
+  <header>CSS Documentation</header>
+  <a href="#Introduction" class="nav-link">Introduction</a>
+  <a href="#Why_to_Learn_CSS?" class="nav-link">Why to Learn CSS?</a>
+  <a href="#CSS_Usage" class="nav-link">CSS Usage</a>
+  <a href="#Hello_world_using_CSS" class="nav-link">Hello World Using CSS</a>
+  <a href="#Modules" class="nav-link">Modules</a>
+  <a href="#Solving_common_CSS_problems" class="nav-link">Solving common CSS problems</a>
+  <a href="#Applications_of_CSS" class="nav-link">Applications of CSS</a>
+  <a href="#References" class="nav-link">References</a>
+</nav>
+
+<main id="main-doc">
+  <section class="main-section" id="Introduction">
+    <header>Introduction</header>
+    <p>Cascading Stylesheets — or CSS is a language that describes the style of an HTML document.
+
+CSS describes how HTML elements should be displayed.</p>
+  </section>
+  
+  <section class="main-section" id="Why_to_Learn_CSS?">
+    <header>Why to Learn CSS?</header>
+    
+    <p>Cascading Style Sheets, fondly referred to as CSS, is a simple design language intended to simplify the process of making web pages presentable.</p>
+
+    <p>CSS is a MUST for students and working professionals to become a great Software Engineer specially when they are working in Web Development Domain. I will list down some of the key advantages of learning CSS:</p>
+    
+    <ul>
+      <li><strong>Create Stunning Web site</strong> - CSS handles the look and feel part of a web page. Using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, how columns are sized and laid out, what background images or colors are used, layout designs,variations in display for different devices and screen sizes as well as a variety of other effects.</li>
+      <li><strong>Become a web designer</strong> - If you want to start a carrer as a professional web designer, HTML and CSS designing is a must skill.</li>
+      <li><strong>Control web</strong> - CSS is easy to learn and understand but it provides powerful control over the presentation of an HTML document. Most commonly, CSS is combined with the markup languages HTML or XHTML.</li>
+      <li><strong>Learn other languages</strong> - Once you understands the basic of HTML and CSS then other related technologies like javascript, php, or angular are become easier to understand.</li>
+    </ul>
+  </section>
+  
+  <section class="main-section" id="CSS_Usage">
+    <header>CSS Usage</header>
+    <p>There are 3 ways to use CSS</p>
+    <ul>
+      <li>Inline CSS</li>
+      <li>Internal CSS</li>
+      <li>External CSS</li>
+      
+      <h3>Inline CSS</h3>
+      <pre><code>  &lt;button style="color: black"&gt;
+     Click Me
+  &lt;/button&gt;</code></pre>
+      
+      <h3>Internal CSS</h3>
+      <p>In your HTML file inside the head tag put the style tag:</p>
+      
+      <pre>
+      <code>  &lt;style&gt;
+        button {
+          color: black;
+        }
+        &lt;/style&gt;</code></pre>
+      
+      <p>And then have a button on your page:</p>
+      <pre><code>  &lt;button style="color: black"&gt;
+     Click Me
+  &lt;/button&gt;</code></pre>
+      
+      <h3>External CSS</h3>
+      <p>In another CSS file we can have:</p>
+      <pre>
+      <code>button {
+        color: black;
+      }</code></pre>
+      <p>And then Import it to HTML using the link tag</p>
+      <pre><code>  &lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+    </ul>
+  </section>
+  
+  <section class="main-section" id="Hello_world_using_CSS">
+    <header>Hello world using CSS</header>
+    
+    <p>Just to give you a little excitement about CSS, I'm going to give you a small conventional CSS Hello World program.</p>
+    
+<pre><code>    &lt;!DOCTYPE html&gt;
+      &lt;html&gt;
+        &lt;head&gt;
+          &lt;title&gt;
+          This is document title
+          &lt;/title&gt;
+          &lt;style&gt;
+            h1 {
+               color: #36CFFF; 
+            }
+          &lt;/style&gt;
+        &lt;/head&gt;	
+        &lt;body&gt;
+          &lt;h1&gt;
+            Hello World!
+          &lt;/h1&gt;
+        &lt;/body&gt;	
+      &lt;/html&gt;
+</code></pre>
+  </section>
+  
+  <section class="main-section" id="Modules">
+    <header>Modules</header>
+    
+    <p>This topic contains the following modules, in a suggested order for working through them. You should definitely start with the first one.</p>
+
+    <h3>CSS first steps</h3>
+    <p>CSS (Cascading Style Sheets) is used to style and lay out web pages — for example, to alter the font, color, size, and spacing of your content, split it into multiple columns, or add animations and other decorative features. This module provides a gentle beginning to your path towards CSS mastery with the basics of how it works, what the syntax looks like, and how you can start using it to add styling to HTML.</p>
+    
+    <h3>CSS building blocks</h3>
+    <p>This module carries on where CSS first steps left off — now you've gained familiarity with the language and its syntax, and got some basic experience with using it, its time to dive a bit deeper. This module looks at the cascade and inheritance, all the selector types we have available, units, sizing, styling backgrounds and borders, debugging, and lots more.</p>
+    <p>The aim here is to provide you with a toolkit for writing competent CSS and help you understand all the essential theory, before moving on to more specific disciplines like text styling and CSS layout.</p>
+
+    <h3>Styling text</h3>
+    <p>With the basics of the CSS language covered, the next CSS topic for you to concentrate on is styling text — one of the most common things you'll do with CSS. Here we look at text styling fundamentals, including setting font, boldness, italics, line and letter spacing, drop shadows and other text features. We round off the module by looking at applying custom fonts to your page, and styling lists and links.<p>
+    
+    <h3>CSS layout</h3>
+    <p>At this point we've already looked at CSS fundamentals, how to style text, and how to style and manipulate the boxes that your content sits inside. Now it's time to look at how to place your boxes in the right place in relation to the viewport, and one another. We have covered the necessary prerequisites so we can now dive deep into CSS layout, looking at different display settings, modern layout tools like flexbox, CSS grid, and positioning, and some of the legacy techniques you might still want to know about.</p>
+  </section>
+  
+  <section class="main-section" id="Solving_common_CSS_problems">
+    <header>Solving common CSS problems</header>
+    <p>Use CSS to solve common problems provides links to sections of content explaining how to use CSS to solve very common problems when creating a web page.</p>
+
+    <p>From the beginning, you'll primarily apply colors to HTML elements and their backgrounds; change the size, shape, and position of elements; and add and define borders on elements. But there's not much you can't do once you have a solid understanding of even the basics of CSS. One of the best things about learning CSS is that once you know the fundamentals, usually you have a pretty good feel for what can and can't be done, even if you don't actually know how to do it yet!</p>
+  </section>
+  
+  <section class="main-section" id="Applications_of_CSS">
+    <header>Applications of CSS</header>
+    
+    <p>As mentioned before, CSS is one of the most widely used style language over the web. I'm going to list few of them here:</p>
+    <ul>
+      <li><strong>CSS saves time</strong> - You can write CSS once and then reuse same sheet in multiple HTML pages. You can define a style for each HTML element and apply it to as many Web pages as you want.</li>
+      <li><strong>Pages load faster</strong> - If you are using CSS, you do not need to write HTML tag attributes every time. Just write one CSS rule of a tag and apply it to all the occurrences of that tag. So less code means faster download times.</li>
+      <li><strong>Easy maintenance</strong> - To make a global change, simply change the style, and all elements in all the web pages will be updated automatically.</li>
+      <li><strong>Superior styles to HTML</strong> - CSS has a much wider array of attributes than HTML, so you can give a far better look to your HTML page in comparison to HTML attributes.</li>
+      <li><strong>Multiple Device Compatibility</strong> - Style sheets allow content to be optimized for more than one type of device. By using the same HTML document, different versions of a website can be presented for handheld devices such as PDAs and cell phones or for printing.</li>
+      <li><strong>Global web standards</strong> - Now HTML attributes are being deprecated and it is being recommended to use CSS. So its a good idea to start using CSS in all the HTML pages to make them compatible to future browsers.</li>
+    </ul>
+  </section>
+  
+  <section class="main-section" id="References">
+    <header>References</header>
+    <h3>CSS on MDN</h3>
+    <p>The main entry point for CSS documentation on MDN, where you'll find detailed reference documentation for all features of the CSS language. Want t
+      o know all the values a property can take? This is a good place to go.</h3>
+  </section>
+</main>
+<!-- partial -->
+  
+</body>
+</html>

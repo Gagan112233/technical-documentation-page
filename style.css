@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:400,500&display=swap');
+/*400 and 500 are for bold*/
+
+* {
+  box-sizing: border-box; /*padding and border are included in the width and height*/
+}
+
+body {
+  margin: 0; /*Move the content to full screen leaving no free edges*/
+  display: flex; /*To align the main elements one next to another*/
+  font-family: 'Rubik', sans-serif;
+}
+
+nav {
+  width: 300px;
+  /*background-color: purple; */
+  height: 100vh; /*adding vertical height so that it goes till bottom of the page*/
+  background-color: #eee;
+  border-right: 2px solid #777;
+}
+
+nav a {
+  color: black;
+  display: block; /*To make link display one below other*/
+  padding: 15px; /*To add spacing between the links*/
+  border-top: 1px solid #777;
+  text-decoration: none; /* To remove underline for anchor tags*/
+}
+
+nav header {
+  padding: 15px;
+}
+
+main {
+  flex: 1; /*For width of main to spread till end. check with bg color as shown below*/
+  /*background-color: orange; */
+  height: 100vh; /*setting vertical height for main tag*/
+  overflow-y: scroll; /*Adding y-axis scroll*/
+}
+
+section {
+  padding: 20px;
+  line-height: 1.5;
+}
+
+header {
+  font-size: 24px;
+  font-weight: 500; /*To make it bold*/
+}
+  
+  pre {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #ddd;
+    border-radius: 8px;
+  }
+
+/*For smaller screen resolution*/
+@media(max-width: 600px){
+  body {
+    flex-direction: column;
+  }
+  
+  nav {
+    border-right: none;
+    border-bottom: 2px solid #777;
+    height: 200px;
+    overflow-y: scroll;
+    width: 100%;
+  }
+  main {
+    height: auto;
+    width: 100%;
+  }
+}
